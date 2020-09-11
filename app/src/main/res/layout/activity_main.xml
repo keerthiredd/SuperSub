@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/img_explore_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_addfrd_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_explore_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Feed"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorBlack" />
+        <ImageView
+            android:id="@+id/img_explore1_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:background="@mipmap/ic_launcher_search" />
+        <ImageView
+            android:id="@+id/img_explore_notification"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/ic_notification_transparent" />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+       >
+        <TextView
+            android:id="@+id/tv_auto_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:text="Welcome"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack" />
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:id="@+id/viewpager">
+        </androidx.viewpager.widget.ViewPager>
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal">
+
+
+
+                <!--   Recycler View Item Row   -->
+                <LinearLayout
+                    android:layout_width="160dp"
+
+                    android:layout_height="60dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_round_corner"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_excerise_batting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="13dp"
+                        android:gravity="center"
+                        android:text="Batting"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/edittexttextsize"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+
+
+
+                <!--   Recycler View Item Row   -->
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/button_round_corner"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_margin="3dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_excerise_bowling"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="13dp"
+                        android:gravity="center"
+                        android:text="Bowling"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/edittexttextsize"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+
+
+
+                <!--   Recycler View Item Row   -->
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/button_round_corner"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_margin="3dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_excerise_fielding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="13dp"
+                        android:gravity="center"
+                        android:text="Fielding"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/edittexttextsize"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+
+
+                <!--   Recycler View Item Row   -->
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/button_round_corner"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_margin="3dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_excerise_wicketkeeping"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="13dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="WicketKeeping"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/edittexttextsize"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_exercise_resume"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <!--   Recycler View Item Row   -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_explore_resume"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_addfrd_black_24dp" />
+
+            <TextView
+                android:id="@+id/tv_explore_resume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="90dp"
+                android:text="Resume Workout"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack" />
+
+            <ImageView
+                android:id="@+id/img_explore1_resume"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="85dp"
+                android:background="@mipmap/ic_launcher_search" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_auto_Top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:text="Top Pick For You"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack" />
+        <VideoView
+            android:id="@+id/simpleVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+           android:layout_below="@+id/tv_auto_scroll"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_exercise_resumes"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <!--   Recycler View Item Row   -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_explore_resumes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="90dp"
+                android:text="Resume Workout"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack" />
+
+            <ImageView
+                android:id="@+id/img_explore1_resumes"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="85dp"
+                android:background="@mipmap/ic_launcher_search" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
